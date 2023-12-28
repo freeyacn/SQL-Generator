@@ -1,0 +1,12 @@
+C:\freeya\Csharp\SQL-Generator\SQL-Generator\bin\Debug\SQL-Generator.exe.config
+C:\freeya\Csharp\SQL-Generator\SQL-Generator\bin\Debug\SQL-Generator.exe
+C:\freeya\Csharp\SQL-Generator\SQL-Generator\bin\Debug\SQL-Generator.pdb
+C:\freeya\Csharp\SQL-Generator\SQL-Generator\obj\Debug\SQL-Generator.csproj.AssemblyReference.cache
+C:\freeya\Csharp\SQL-Generator\SQL-Generator\obj\Debug\SQL_Generator.Form1.resources
+C:\freeya\Csharp\SQL-Generator\SQL-Generator\obj\Debug\SQL_Generator.Properties.Resources.resources
+C:\freeya\Csharp\SQL-Generator\SQL-Generator\obj\Debug\SQL-Generator.csproj.GenerateResource.cache
+C:\freeya\Csharp\SQL-Generator\SQL-Generator\obj\Debug\SQL-Generator.csproj.CoreCompileInputs.cache
+C:\freeya\Csharp\SQL-Generator\SQL-Generator\obj\Debug\SQL-Generator.exe
+C:\freeya\Csharp\SQL-Generator\SQL-Generator\obj\Debug\SQL-Generator.pdb
+C:\freeya\Csharp\SQL-Generator\SQL-Generator\bin\Debug\ICSharpCode.TextEditor.dll
+C:\freeya\Csharp\SQL-Generator\SQL-Generator\obj\Debug\SQL-Generator.csproj.CopyComplete
