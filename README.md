@@ -14,3 +14,4 @@
 
 >3. 点击生成按钮  >> click button : Generate
 <img width="910" alt="image" src="https://github.com/freeyacn/SQL-Generator/assets/10460109/6c47fd5b-1d0b-4794-bed7-600d3d3c61a3">
+1
