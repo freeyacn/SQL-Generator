@@ -113,11 +113,32 @@ namespace SQL_Generator
             }
 
             String tableName = "TableName";
-            Boolean nodata_flag = false;
+            String tableDesc = "";
+            String tableSchema = "";
+
+            //输入表名
+            FrmDialogTableInfo frmDialogTableInfo = new FrmDialogTableInfo();
+            frmDialogTableInfo.ShowDialog();
+            if (frmDialogTableInfo.DialogResult == DialogResult.OK)
+            {
+                tableName = frmDialogTableInfo.TableName.ToUpper();
+                tableDesc = frmDialogTableInfo.Tabledesc;
+                tableSchema = frmDialogTableInfo.TableSchema.ToUpper();
+                if (!string.IsNullOrEmpty(tableSchema.Trim()))
+                {
+                    tableSchema = tableSchema + ".";
+                } 
+            }
+            else
+            {
+                return;
+            }
+
+             
             String primaryKey = "";
             StringBuilder sb = new StringBuilder();
             StringBuilder sbline = new StringBuilder();
-            sb.AppendLine("create table "+ tableName+"(");
+            sb.AppendLine("create table "+tableSchema +  tableName+"(");
             for (int i = 0; i< dataGridView1.Rows.Count; i++)
             {
                 Boolean notNullRowFlag = false;
@@ -158,7 +179,7 @@ namespace SQL_Generator
             sb.AppendLine(");");
 
             //生成注释
-            sb.AppendLine("comment on table "+ tableName + " is 'xx表 ';");
+            sb.AppendLine("comment on table "+ tableName + " is '"+tableDesc+"';");
             sb.AppendLine(sbline.ToString());
 
 
@@ -222,6 +243,12 @@ namespace SQL_Generator
         private void textEditorControl1_SizeChanged(object sender, EventArgs e)
         {
             BtnCloseSqlWin.Location = new System.Drawing.Point(textEditorControl1.Width - 200, textEditorControl1.Location.Y + 10);
+        }
+
+        private void 清空ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            dataGridView1.Rows.Clear();
+            this.dataGridView1.Rows.Add(1);
         }
     }
 }
